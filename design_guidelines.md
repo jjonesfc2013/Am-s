@@ -1,106 +1,159 @@
-# Design Guidelines: AI Lead Engagement Platform
+# Design Guidelines: AI Lead Engagement Platform (StoryBrand Style)
 
 ## Design Approach
 
-**Reference-Based Strategy**: Drawing inspiration from modern B2B SaaS leaders (Linear, Stripe, Vercel) combined with AI-focused product aesthetics (OpenAI, Anthropic). This creates a professional, tech-forward identity that builds trust with business decision-makers while showcasing innovation.
+**Inspiration**: StoryBrand.com - Bold, dramatic, conversion-focused design with dark backgrounds, high-contrast white typography, and strong red CTAs.
 
-**Core Principle**: Communicate sophistication and reliability through clean layouts, strategic use of space, and purposeful visual hierarchy.
+**Core Principle**: Create immediate impact through dramatic contrast, bold messaging, and clear conversion paths. Every element should guide visitors toward action.
+
+## Color Palette
+
+**Hero & Primary Sections**:
+- Background: Dark charcoal/black (#1a1a1a to #0a0a0a)
+- Overlay gradients with subtle dark tones
+
+**Accent Color**:
+- Primary CTA Red: #E63946 (bright, attention-grabbing red)
+- Hover state: Slightly darker #D62828
+
+**Typography Colors**:
+- Primary headlines: Pure white (#FFFFFF)
+- Body text on dark: Light gray (#E5E5E5)
+- Secondary text: Medium gray (#999999)
+
+**Light Sections**:
+- Background: Off-white (#F8F8F8)
+- Cards: Pure white (#FFFFFF)
 
 ## Typography System
 
-**Font Families** (via Google Fonts):
-- Primary: Inter (400, 500, 600, 700) - for UI elements, body text, navigation
-- Display: Space Grotesk (500, 700) - for headlines and hero text
+**Font Families**:
+- Headlines: Impact, "Arial Black", sans-serif (bold, condensed feel)
+- Body: Inter, system-ui, sans-serif
 
 **Type Scale**:
-- Hero headline: text-6xl lg:text-7xl, font-bold, tracking-tight
-- Section headlines: text-4xl lg:text-5xl, font-bold
-- Subsection titles: text-2xl lg:text-3xl, font-semibold
-- Feature titles: text-xl font-semibold
-- Body text: text-base lg:text-lg, leading-relaxed
-- Small text/captions: text-sm
+- Hero headline: text-5xl lg:text-7xl, font-black, uppercase, tracking-tight
+- Section headlines: text-4xl lg:text-5xl, font-bold, uppercase
+- Subheadlines: text-xl lg:text-2xl, normal-case
+- Body text: text-base lg:text-lg
+- Small text: text-sm
+
+**Style Notes**:
+- Use UPPERCASE for major headlines
+- Normal case for subheadings and body
+- High contrast is essential - white on dark backgrounds
 
 ## Layout System
 
-**Spacing Primitives**: Use Tailwind units of 2, 4, 6, 8, 12, 16, 20, and 24 for consistent rhythm.
+**Hero Section**:
+- Full viewport height (min-h-screen)
+- Dark background with photographic overlay
+- Left-aligned content (60% width on desktop)
+- Bold headline + subtext + dual CTAs
+- Right side: circular image or photo (if applicable)
 
-**Section Padding**: 
-- Desktop: py-20 to py-32
-- Mobile: py-12 to py-16
+**Section Spacing**:
+- Desktop: py-16 to py-24
+- Mobile: py-12
 
 **Container Strategy**:
-- Full-width sections with inner max-w-7xl mx-auto px-6 lg:px-8
-- Text-focused content: max-w-4xl mx-auto
-- Form containers: max-w-2xl
+- Max width: max-w-7xl
+- Padding: px-6 lg:px-8
 
-## Component Library
+## Component Patterns
 
-### Navigation
-Fixed header with blur backdrop (backdrop-blur-lg), minimal height (h-16), containing logo left, navigation center, CTA button right. Include subtle border-bottom.
+### Buttons
+**Primary (Red CTA)**:
+- Background: Red (#E63946)
+- Text: White, bold, uppercase
+- Size: Large (px-8 py-4)
+- Rounded: rounded-lg
+- Hover: Slight darken, no fancy effects
 
-### Hero Section (viewport: 85vh)
-Two-column layout on desktop, stacked on mobile. Left column contains headline, subheading (max-w-xl), primary CTA button, and trust indicator ("Trusted by 500+ businesses"). Right column features animated dashboard mockup or AI conversation visualization. Background: subtle gradient mesh overlay.
+**Secondary (Outline)**:
+- Border: White (on dark) or dark (on light)
+- Text: White (on dark) or dark (on light)
+- Background: transparent
+- Hover: Subtle background fill
 
-**Hero Image**: Large, high-quality visualization showing AI chat interface or dashboard mockup with live conversation examples. Image should occupy right 50% on desktop, full-width on mobile below headline.
+### Cards
+- Pure white background
+- Subtle shadow
+- Rounded corners (rounded-xl)
+- Clean borders when needed
+- Ample padding (p-8)
 
-### Services/Solutions Section
-Three-column grid (grid-cols-1 md:grid-cols-3) with icon, title, description for each service pillar: "24/7 Engagement," "Human-Like Conversations," "Zero Missed Leads." Icons from Heroicons (outline style, size 10).
+### Icons
+- Simple, bold outlines
+- Monochrome (white on dark, dark on light)
+- Medium size (w-6 h-6 to w-8 h-8)
 
-### Features Showcase
-Alternating layout: Feature description on left, visual demonstration on right, then flip for next feature. Four key features total. Includes: Natural Language Processing, Lead Qualification, Instant Response, CRM Integration. Each feature block uses asymmetric spacing for visual interest.
+## Section Designs
 
-### How It Works
-Horizontal timeline on desktop (3 steps), vertical on mobile. Each step numbered with large display numbers (text-6xl, semi-transparent), step title, description, and connecting line between steps.
+### Hero
+- Dark background (#1a1a1a)
+- Overlay photo with gradient darkening
+- Bold white uppercase headline
+- Red primary CTA + White outline secondary CTA
+- Circular image element on right (if person/product photo)
+
+### Three-Column Action Cards
+- Below hero
+- White background cards
+- Icon + bold text
+- Equal height, rounded corners
+- Hover: subtle lift
+
+### Features/Benefits
+- Alternating dark and light backgrounds
+- Problem section: Dark background, bold white text
+- Solution section: Light background, dark text
+- Icons to support messaging
 
 ### Social Proof
-Two-column grid (lg:grid-cols-2) with client testimonials. Each testimonial card includes quoted text, client name, company, role, and company logo placeholder. Add metrics bar above: "10M+ Leads Engaged | 98% Response Rate | 45% Conversion Increase" in three columns.
+- Light background
+- Clean layout with logos (grayscale)
+- Large stats/numbers
+- Testimonials in white cards
 
-### Demo/Contact Section
-Split layout: Left side has compelling headline and benefit bullets, right side contains form (Name, Email, Company, Phone, Message fields) with prominent submit button. Add small trust badge below form: "SOC 2 Compliant | Enterprise-Grade Security"
+### Contact/CTA Section
+- Can be dark or light
+- Prominent form
+- Red submit button
+- Trust badges below
 
 ### Footer
-Three-column layout: Company info and description (col 1), Quick Links (col 2), Contact info (col 3). Bottom bar with copyright, social icons (LinkedIn, Twitter), and legal links.
-
-## Icons & Assets
-
-**Icons**: Heroicons via CDN (outline style for features, solid for UI elements)
-
-**Images Required**:
-1. **Hero**: AI dashboard mockup or chat interface visualization (right column, 600x800px min)
-2. **Feature demonstrations**: 4 product screenshots showing AI in action (800x600px each)
-3. **Client logos**: 6-8 company logos for social proof (grayscale treatment)
-4. **Testimonial headshots**: 4-6 client photos (circular, 80x80px)
+- Dark background (#1a1a1a)
+- Multi-column layout
+- White/gray text
+- Minimal styling
 
 ## Interaction Patterns
 
-**Buttons**: 
-- Primary: Large (px-8 py-4), rounded-lg, font-semibold, with subtle shadow
-- Secondary: Outline style, same padding
-- On-image buttons: backdrop-blur-sm background treatment
+**Buttons**:
+- Subtle hover darkening
+- No elaborate animations
+- Fast, responsive feel
 
-**Cards**: Subtle border, rounded-xl, hover state with slight lift (transform translateY)
+**Cards**:
+- Slight shadow on hover
+- Minimal transform
 
-**Forms**: Floating labels, focus state with border emphasis, rounded-lg inputs with py-3 px-4 padding
+**Scroll Behavior**:
+- Smooth, but not animated reveals
+- Static, always-visible content
 
-**Animations**: Minimal and purposeful only
-- Fade-in on scroll for section reveals
-- Gentle float animation on hero image
-- NO scroll-jacking, NO excessive motion
+## Key Design Principles
+
+1. **Contrast is King**: Always maximum contrast between text and background
+2. **Bold Headlines**: Use impact fonts, uppercase, make them LOUD
+3. **Red for Action**: Only use red for primary CTAs to create focus
+4. **Simplicity**: Remove unnecessary decoration, let the message shine
+5. **Clear Hierarchy**: Guide the eye from headline → benefit → CTA
 
 ## Accessibility
 
-- Maintain WCAG AA contrast ratios throughout
-- All interactive elements have clear focus states (ring-2 ring-offset-2)
-- Form inputs have associated labels (visible or aria-label)
-- Semantic HTML structure (header, nav, main, section, footer)
-- All images include descriptive alt text
-
-## Key Design Decisions
-
-**Viewport Strategy**: Hero uses 85vh for impact, all other sections use natural content height with consistent py-20/32 spacing. NO forced 100vh sections beyond hero.
-
-**Multi-column Usage**: Strategic implementation - 3 columns for services, 2 for testimonials, alternating single-column for features. Mobile always collapses to single column.
-
-**Visual Hierarchy**: Establish through type scale, spacing variations, and strategic use of borders/shadows rather than heavy visual effects.
-
-**Professional Polish**: Clean, spacious layouts with purposeful negative space. Every section serves a clear conversion goal while maintaining sophisticated aesthetic appropriate for B2B enterprise audience.
+- WCAG AAA contrast on dark backgrounds (white text)
+- Large, readable fonts
+- Clear focus states
+- Semantic HTML structure

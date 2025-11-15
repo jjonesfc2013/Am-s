@@ -1,35 +1,47 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-16 border-b bg-background/80 backdrop-blur-lg">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">AI</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a] border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          {/* TODO: Replace with actual logo once uploaded */}
+          <div className="bg-white px-3 py-1.5 text-sm font-bold text-black">
+            YOUR LOGO
           </div>
-          <span className="font-display font-bold text-lg">LeadEngage</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm font-medium text-foreground hover-elevate px-3 py-2 rounded-md" data-testid="link-features">
-            Features
+          <a 
+            href="#problem" 
+            className="text-sm font-medium text-white/90 hover:text-white transition-colors" 
+            data-testid="link-problem"
+          >
+            The Problem
           </a>
-          <a href="#how-it-works" className="text-sm font-medium text-foreground hover-elevate px-3 py-2 rounded-md" data-testid="link-how-it-works">
-            How It Works
+          <a 
+            href="#solution" 
+            className="text-sm font-medium text-white/90 hover:text-white transition-colors" 
+            data-testid="link-solution"
+          >
+            The Solution
           </a>
-          <a href="#testimonials" className="text-sm font-medium text-foreground hover-elevate px-3 py-2 rounded-md" data-testid="link-testimonials">
-            Testimonials
+          <a 
+            href="#results" 
+            className="text-sm font-medium text-white/90 hover:text-white transition-colors" 
+            data-testid="link-results"
+          >
+            Results
           </a>
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="md:hidden" data-testid="button-menu">
-            <Menu className="w-5 h-5" />
-          </Button>
-          <Button variant="default" className="hidden md:inline-flex" data-testid="button-demo">
-            Get Demo
+          <Button 
+            variant="default" 
+            className="bg-[#E63946] hover:bg-[#D62828] text-white font-bold uppercase text-sm px-6" 
+            data-testid="button-cta-header"
+          >
+            Get Started
           </Button>
         </div>
       </div>

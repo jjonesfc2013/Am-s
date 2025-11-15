@@ -1,5 +1,10 @@
 import Header from '../Header';
 
 export default function HeaderExample() {
-  return <Header />;
+  return (
+    <div className="bg-background">
+      <Header />
+      <div className="h-screen" />
+    </div>
+  );
 }
