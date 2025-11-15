@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/generated_images/AI_chat_dashboard_realistic_conversation_18f90bb3.png";
+import heroImage from "@assets/generated_images/AI_chat_interface_dashboard_a411192f.png";
 
 export default function Hero() {
   return (
