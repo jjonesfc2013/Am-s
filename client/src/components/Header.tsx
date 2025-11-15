@@ -9,7 +9,7 @@ export default function Header() {
           <img 
             src={logoImage} 
             alt="Amius" 
-            className="h-8"
+            className="h-12"
             data-testid="img-logo"
           />
         </div>

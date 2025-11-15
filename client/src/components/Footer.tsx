@@ -9,7 +9,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="Amius" 
-              className="h-8 mb-4"
+              className="h-12 mb-4"
               data-testid="img-logo-footer"
             />
             <p className="text-white/60 text-sm leading-relaxed">
