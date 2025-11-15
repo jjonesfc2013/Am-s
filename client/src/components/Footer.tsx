@@ -42,7 +42,7 @@ export default function Footer() {
             <h3 className="font-bold text-white mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-white/60">
               <li>hello@AmusMake.com</li>
-              <li>1-800-AI-LEADS</li>
+              <li>+1 980-372-8082</li>
             </ul>
           </div>
         </div>
