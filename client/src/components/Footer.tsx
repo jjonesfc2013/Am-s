@@ -1,3 +1,5 @@
+import logoImage from "@assets/no background wbite words i think_1763232140226.png";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/10">
@@ -5,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img 
-              src="/attached_assets/no background wbite words i think_1763232140226.png" 
+              src={logoImage} 
               alt="Amius" 
               className="h-8 mb-4"
               data-testid="img-logo-footer"

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/no background wbite words i think_1763232140226.png";
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="/attached_assets/no background wbite words i think_1763232140226.png" 
+            src={logoImage} 
             alt="Amius" 
             className="h-8"
             data-testid="img-logo"
