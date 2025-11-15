@@ -1,16 +1,7 @@
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { useState } from "react";
 import heroImage from "@assets/generated_images/AI_chat_interface_dashboard_a411192f.png";
 
 export default function Hero() {
-  const [videoOpen, setVideoOpen] = useState(false);
-
   return (
     <section className="relative min-h-screen flex items-center bg-[#1a1a1a] overflow-hidden">
       {/* Dark overlay gradient */}
@@ -73,7 +64,6 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-8">
           <div className="grid md:grid-cols-3 gap-4">
             <button 
-              onClick={() => setVideoOpen(true)}
               className="bg-white rounded-lg p-6 text-left hover:shadow-xl transition-shadow group"
               data-testid="card-action-0"
             >
@@ -111,26 +101,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Video Modal */}
-      <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
-        <DialogContent className="max-w-4xl p-0 overflow-hidden" data-testid="dialog-video">
-          <DialogHeader className="sr-only">
-            <DialogTitle>Demo Video</DialogTitle>
-          </DialogHeader>
-          <div className="relative pt-[56.25%] bg-black">
-            <video 
-              controls 
-              autoPlay
-              className="absolute inset-0 w-full h-full"
-              data-testid="video-demo"
-            >
-              <source src="/attached_assets/Voice_AI_Video_Generation_1763232235500.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 }
