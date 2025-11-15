@@ -6,12 +6,10 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-[#1a1a1a] overflow-hidden">
       {/* Dark overlay gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60 z-0" />
-      
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
       </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-24 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
@@ -58,7 +56,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
       {/* Three action cards below hero */}
       <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-8">
@@ -71,7 +68,7 @@ export default function Hero() {
                 <div className="w-10 h-10 bg-black rounded flex items-center justify-center flex-shrink-0">
                   <span className="text-white text-xl">▶</span>
                 </div>
-                <span className="font-bold text-base uppercase">Watch The Demo</span>
+                <span className="font-bold text-base uppercase">Listen to Demo</span>
               </div>
             </button>
             
