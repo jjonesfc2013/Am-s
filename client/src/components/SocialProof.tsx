@@ -30,7 +30,7 @@ export default function SocialProof() {
           
           <div className="flex flex-wrap justify-center gap-12 lg:gap-16">
             <div className="text-center" data-testid="stat-leads">
-              <div className="text-5xl lg:text-6xl font-black mb-2">10M+</div>
+              <div className="text-5xl lg:text-6xl font-black mb-2">200k+</div>
               <div className="text-lg text-muted-foreground font-semibold">Leads Engaged</div>
             </div>
             <div className="text-center" data-testid="stat-response">
