@@ -41,14 +41,14 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-white mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-white/60">
-              <li>hello@yourcompany.com</li>
+              <li>hello@AmusMake.com</li>
               <li>1-800-AI-LEADS</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-white/10 pt-8 text-center text-sm text-white/40">
-          <p>© 2025 Your Company. All rights reserved.</p>
+          <p>© 2025 Amius. All rights reserved.</p>
         </div>
       </div>
     </footer>
