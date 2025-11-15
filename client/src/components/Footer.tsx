@@ -4,10 +4,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            {/* TODO: Replace with actual logo */}
-            <div className="bg-white px-3 py-1.5 text-sm font-bold text-black inline-block mb-4">
-              YOUR LOGO
-            </div>
+            <img 
+              src="/attached_assets/no background wbite words i think_1763232140226.png" 
+              alt="Amius" 
+              className="h-8 mb-4"
+              data-testid="img-logo-footer"
+            />
             <p className="text-white/60 text-sm leading-relaxed">
               AI-powered lead engagement that never sleeps, never misses, and always converts.
             </p>

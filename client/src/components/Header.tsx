@@ -5,10 +5,12 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* TODO: Replace with actual logo once uploaded */}
-          <div className="bg-white px-3 py-1.5 text-sm font-bold text-black">
-            YOUR LOGO
-          </div>
+          <img 
+            src="/attached_assets/no background wbite words i think_1763232140226.png" 
+            alt="Amius" 
+            className="h-8"
+            data-testid="img-logo"
+          />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
