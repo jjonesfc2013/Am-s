@@ -43,9 +43,7 @@ export default function Header() {
             variant="default" 
             className="bg-[#E63946] hover:bg-[#D62828] text-white font-bold uppercase text-base px-6" 
             data-testid="button-cta-header"
-          >
-            Get Started
-          </Button>
+          >Start Now</Button>
         </div>
       </div>
     </header>
