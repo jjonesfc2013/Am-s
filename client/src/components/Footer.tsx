@@ -3,7 +3,7 @@ import logoImage from "@assets/no background wbite words i think_1763232140226.p
 export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img 
